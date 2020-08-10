@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Custom
-import Card from './Card.js';
+import Card from '../Card.js';
 
 const CardList = (props) => props.cards.map((card) => <Card key={card.id} {...card} alt=""/>);
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import './App.css';
-import Form from './Form.js';
-import CardList from './CardList.js';
+import Form from './components/Form.js';
+import CardList from './components/CardList.js';
 
 class App extends React.Component {
 
