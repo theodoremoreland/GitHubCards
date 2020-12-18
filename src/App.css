@@ -1,21 +1,16 @@
-
-.github-profile {
-	margin: 1rem;
+@font-face {
+  font-family: header;
+  src: url('./fonts/Ubuntu/Ubuntu-Bold.ttf');
 }
 
-.github-profile img {
-  width: 75px;
-}
-  
-.info {
-  display: inline-block;
-  margin-left: 12px;
-
+@font-face {
+  font-family: accent;
+  src: url('./fonts/Ubuntu/Ubuntu-Medium.ttf');
 }
 
-.info .name {
-  font-size: 1.25rem;
-  font-weight: bold;
+@font-face {
+  font-family: accent-light;
+  src: url('./fonts/Ubuntu/Ubuntu-Regular.ttf');
 }
 
 form {
@@ -28,6 +23,7 @@ form {
 }
 
 .header {
+  font-family: header;
 	text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;

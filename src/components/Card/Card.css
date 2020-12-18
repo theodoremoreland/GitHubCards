@@ -1,0 +1,11 @@
+.profileFolderIcon, .profileUsersIcon {
+    margin-right: 5px !important;
+}
+
+.profileHeader {
+    font-family: header !important;
+}
+
+.profileBio {
+    font-family: accent !important;
+}
