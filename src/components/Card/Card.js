@@ -1,20 +1,28 @@
 import React from 'react';
 
-class Card extends React.Component {
+// Semantic UI
+import { Card, Icon, Image } from 'semantic-ui-react'
+
+class card extends React.Component {
 
     render() {
       let profile = this.props;
 
       return (
-        <div className="github-profile">
-            <img src={profile.avatar_url} alt={profile.alt}/>
-            <div className="info">
-                <div className="name">{profile.name}</div>
-                <div className="company">{profile.company}</div>
+        <Card className="profile">
+          <Image src={profile.avatar_url} alt={profile.alt}/>
+          <Card.Content>
+            <Card.Header>{profile.name}</Card.Header>
+          </Card.Content>
+          <Card.Content extra>
+            <div>
+              <Icon name='building' />
+                {profile.company}
             </div>
-        </div>
+          </Card.Content>
+        </Card>
       )
     }
 }
 
-export default Card;
+export default card;

@@ -1,8 +1,14 @@
+// React
 import React from 'react';
+
+// Other
 import axios from 'axios';
 
-class Form extends React.Component {
+// Semantic UI
+import { Input } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 
+class Form extends React.Component {
     state = {
         userNameInput: ""
     };
@@ -17,15 +23,15 @@ class Form extends React.Component {
     render() {
       return (
         <form onSubmit={this.handleSubmit}>
-            <input type="text"
+            <Input type="text"
              value={this.state.userNameInput}
              onChange={event => this.setState( {userNameInput: event.target.value } )} 
              required 
              placeholder="GitHub Username"/>
-            <button>Add Card</button>
+            <Button secondary>Add Card</Button>
         </form>
       )
     }
-}
+};
 
 export default Form;
