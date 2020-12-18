@@ -1,11 +1,10 @@
 import React from 'react';
 
 import './App.css';
-import Form from './components/Form.js';
-import CardList from './components/CardList.js';
+import Form from './components/Form/Form.js';
+import CardList from './components/CardList/CardList.js';
 
 class App extends React.Component {
-
   state = {
       cards: []
   };
@@ -15,7 +14,7 @@ class App extends React.Component {
       cards: [...prevState.cards, newProfile]
       })
     );
-  }
+  };
 
   render() {
     return (
@@ -31,7 +30,7 @@ class App extends React.Component {
         </div>
       </>
     )
-  }
+  };
 }
 
 export default App;
