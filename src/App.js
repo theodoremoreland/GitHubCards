@@ -1,8 +1,15 @@
+// React
 import React from 'react';
 
-import './App.css';
+// Semantic UI
+import { Container, Card } from 'semantic-ui-react';
+
+// Custom components
 import Form from './components/Form/Form.js';
 import CardList from './components/CardList/CardList.js';
+
+// Custom styles
+import './App.css';
 
 class App extends React.Component {
   state = {
@@ -18,17 +25,14 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
-        <div className="header">
-          GitHub Cards
-        </div>
+      <Container className="app">
         <div>
           <Form onSubmit={this.addNewProfile}/>
         </div>
-        <div>
+        <Card.Group className="cardGroup">
           <CardList cards={this.state.cards}/>
-        </div>
-      </>
+        </Card.Group>
+      </Container>
     )
   };
 }

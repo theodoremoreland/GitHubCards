@@ -12,7 +12,7 @@ class card extends React.Component {
       let profile = this.props;
 
       return (
-        <Card className="profile" color="teal">
+        <Card className="profile" centered raised>
           <a
             href={profile.html_url}
             target="_blank"

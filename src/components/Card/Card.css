@@ -1,3 +1,14 @@
+.profile {
+    background-color: rgb(238, 238, 238) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: none !important;
+    transition: transform;
+}
+
+.profile:hover {
+    transform: translateY(-10%);
+}
+
 .profileFolderIcon, .profileUsersIcon {
     margin-right: 5px !important;
 }
